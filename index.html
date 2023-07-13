@@ -14,15 +14,52 @@
 <div>
     <form id="survey-form" method="post" action="https://register-demo.freecodecamp.org/">
        <fieldset>
-        <label><input type="text" name="name" id="name"></label>
-        <label><input type="email" name="email" id="email"></label>
-        <label><input type="number" name="age" id="age"></label>
-        <label for=""><select name="dropdown" id="dropdown">
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
+        <label>Input your Name: <input type="text" name="name" id="name" required></label>
+        <label>Input your Email: <input type="email" name="email" id="email" required></label>
+        <label>Input your Age: <input type="number" name="age" id="age" min="18" max="100" required></label>
+        <label for="">Whats your job now<select name="dropdown" id="dropdown">
+            <option value="0">Choose one</option>
+            <option value="1">Student</option>
+            <option value="2">Enterpreneur</option>
+            <option value="3">Employee</option>
+            <option value="4">Freelance</option>
         </select></label>
+       </fieldset>
+       <fieldset>
+        <label for="friend">
+            <input type="radio" name="friend" id="friend"> Friend
+        </label>
+        <label for="family">
+            <input type="radio" name="family" id="family"> Family
+        </label>
+        </fieldset>
+       <fieldset> 
+        <p>What do you think iam in your opinion.</p>
+        <label for="polite">
+            <input type="checkbox" name="polite" id="polite"> Polite
+        </label> 
+            <label for="ambitious">
+            <input type="checkbox" name="ambitious" id="ambitious"> Ambitious
+        </label> 
+        <label for="amusing">
+            <input type="checkbox" name="amusing" id="amusing"> Amusing
+        </label>
+        <label for="angry">
+            <input type="checkbox" name="angry" id="angry"> Angry
+        </label>
+        <label for="cheerful">
+            <input type="checkbox" name="cheerful" id="cheerful"> cheerful
+        </label>
+        <label for="diligent">
+            <input type="checkbox" name="diligent" id="diligent"> Diligent
+        </label>
+        <label for="lazy">
+            <input type="checkbox" name="lazy" id="lazy"> Lazy
+        </label>
+        <label for="friendly">
+            <input type="checkbox" name="friendly" id="friendly"> Friendly
+        </label>
+        <label for="comment"><textarea name="comment" id="comment" cols="30" rows="3" placeholder="Give your advice for me"></textarea></label>
        </fieldset>
     </form>
 </div>
