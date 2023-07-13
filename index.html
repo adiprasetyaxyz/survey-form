@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Survey Form</title>
     
 </head>
-<container>
+<body img>
 <div>
 <h1 id="title">Survey About Me</h1>
 <p id="description">Thank you for taking the time to help me improve the myself</p>
@@ -14,9 +15,9 @@
 <div>
     <form id="survey-form" method="post" action="https://register-demo.freecodecamp.org/">
        <fieldset>
-        <label>Input your Name: <input type="text" name="name" id="name" required></label>
-        <label>Input your Email: <input type="email" name="email" id="email" required></label>
-        <label>Input your Age: <input type="number" name="age" id="age" min="18" max="100" required></label>
+        <label id="name-label" for="name" a>Input your Name: <input type="text" name="name" id="name" placeholder="Input name" required></label>
+        <label id="email-label" for="email" >Input your Email: <input type="email" name="email" id="email" placeholder="Input Email" required></label>
+        <label id="number-label" for="number" >Input your Age: <input type="number" name="number" id="number" min="18" max="100" placeholder="Input Age" required></label>
         <label for="">Whats your job now<select name="dropdown" id="dropdown">
             <option value="0">Choose one</option>
             <option value="1">Student</option>
@@ -25,43 +26,45 @@
             <option value="4">Freelance</option>
         </select></label>
        </fieldset>
-       <fieldset>
-        <label for="friend">
-            <input type="radio" name="friend" id="friend"> Friend
+       <fieldset> Your Relationship
+        <label id="friend" for="friend">
+            <input type="radio" value="name" name="relationship" id="friend"  class="inline"> Friend
         </label>
-        <label for="family">
-            <input type="radio" name="family" id="family"> Family
+        <label id="family" for="family">
+            <input type="radio" value="family" name="relationship" id="family" class="inline"> Family
         </label>
         </fieldset>
        <fieldset> 
         <p>What do you think iam in your opinion.</p>
         <label for="polite">
-            <input type="checkbox" name="polite" id="polite"> Polite
+            <input type="checkbox" value="0" name="polite" id="polite" class="inline"> Polite
         </label> 
             <label for="ambitious">
-            <input type="checkbox" name="ambitious" id="ambitious"> Ambitious
+            <input type="checkbox" value="1" name="ambitious" id="ambitious" class="inline"> Ambitious
         </label> 
         <label for="amusing">
-            <input type="checkbox" name="amusing" id="amusing"> Amusing
+            <input type="checkbox" value="2" name="amusing" id="amusing" class="inline"> Amusing
         </label>
         <label for="angry">
-            <input type="checkbox" name="angry" id="angry"> Angry
+            <input type="checkbox" value="3" name="angry" id="angry" class="inline"> Angry
         </label>
         <label for="cheerful">
-            <input type="checkbox" name="cheerful" id="cheerful"> cheerful
+            <input type="checkbox" value="4" name="cheerful" id="cheerful" class="inline"> cheerful
         </label>
         <label for="diligent">
-            <input type="checkbox" name="diligent" id="diligent"> Diligent
+            <input type="checkbox" value="5" name="diligent" id="diligent" class="inline"> Diligent
         </label>
         <label for="lazy">
-            <input type="checkbox" name="lazy" id="lazy"> Lazy
+            <input type="checkbox" value="6" name="lazy" id="lazy" class="inline"> Lazy
         </label>
         <label for="friendly">
-            <input type="checkbox" name="friendly" id="friendly"> Friendly
+            <input type="checkbox" value="7" name="friendly" id="friendly" class="inline"> Friendly
         </label>
         <label for="comment"><textarea name="comment" id="comment" cols="30" rows="3" placeholder="Give your advice for me"></textarea></label>
-       </fieldset>
-    </form>
+        <input type="submit" value="Submit" id="submit">
+    </fieldset>
+    
+</form>
 </div>
-</container>
+</body>
 </html>
